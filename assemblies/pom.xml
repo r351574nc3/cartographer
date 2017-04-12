@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--
+    
+        Datapipe Trebuchet (TM) 
+        Copyright (c) 2017-present Datapipe, Inc.
+        All rights reserved. Includes the third-party code.
+    
+    -->
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.github.r351574nc3.nexus</groupId>
+        <artifactId>nexus-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.github.r351574nc3.nexus.assemblies</groupId>
+    <artifactId>nexus-assemblies</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Datapipe Nexus: Assemblies</name>
+    <description>Nexus assemblies details</description>
+
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- IMPORTS -->
+
+      <dependency>
+        <groupId>org.sonatype.nexus</groupId>
+        <artifactId>nexus-components</artifactId>
+        <type>pom</type>
+        <version>3.3.0-SNAPSHOT</version>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.sonatype.nexus.plugins</groupId>
+        <artifactId>nexus-plugins</artifactId>
+        <type>pom</type>
+        <version>3.3.0-SNAPSHOT</version>
+        <scope>import</scope>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+    <modules>
+        <module>cartographer-feature</module>
+        <module>nexus-template</module>
+    </modules>
+</project>
